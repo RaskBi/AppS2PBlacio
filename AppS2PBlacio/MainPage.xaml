@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS2PBlacio.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="Reporte de notas" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="20"/>
+        </Frame>
+        <Label Text="Notas" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="18"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nota de Seguimiento 1" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtS1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="Examen 1" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtE1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Nota Parcial 1" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtP1" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+
+            <Label Text="Nota de Seguimiento 2" FontSize="18" Grid.Row="4" Grid.Column="0"/>
+            <Entry x:Name="txtS2" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+
+            <Label Text="Examen 2" FontSize="18" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="txtE2" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"/>
+
+            <Label Text="Nota Parcial 2" FontSize="18" Grid.Row="6" Grid.Column="0"/>
+            <Entry x:Name="txtP2" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+
+
+            <Label Text="Nota Final" FontSize="18" Grid.Row="8" Grid.Column="0"/>
+            <Entry x:Name="txtNf" IsReadOnly="True" Grid.Row="8" Grid.Column="1"/>
+
+            <Label Text="Estado" FontSize="18" Grid.Row="9" Grid.Column="0"/>
+            <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="9" Grid.Column="1"/>
+        </Grid>
+                
+        <Button x:Name="btnResultado" Text="Calcular" Clicked="btnResultado_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
