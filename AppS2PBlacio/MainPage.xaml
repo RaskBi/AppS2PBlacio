@@ -8,6 +8,7 @@
             <Label Text="Reporte de notas" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="20"/>
         </Frame>
         <Label Text="Notas" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="18"/>
+        <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" FontSize="18" TextColor="Blue"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>

@@ -10,9 +10,10 @@ namespace AppS2PBlacio
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(string usuario)
         {
             InitializeComponent();
+            lblUsuario.Text = usuario;
         }
 
         private void btnResultado_Clicked(object sender, EventArgs e)
